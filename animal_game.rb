@@ -6,7 +6,7 @@ cat = Cat.new('Fluffy')
 dog = Dog.new('Rover', 'Woof')
 fox = Fox.new('Slick')
 
-animals = [cat, dog, fox]
+animals = [cat, dog, fox]     #itterates through array
 	animals.each do |animal|
 	puts animal.get_sound
 end
