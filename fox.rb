@@ -1,5 +1,6 @@
 class Fox
 	attr_reader :name, :sound #gives acces to @name and @sound
+	
 	def initialize(name)
 		@name=name
 		@sound='???'

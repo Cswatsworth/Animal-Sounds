@@ -16,12 +16,12 @@ class TestAnimalFunctions < Minitest::Test
 	end
 
 	def test_dog_name
-		animal=Dog.new('Rover')
+		animal=Dog.new('Rover','Woof')
 		assert_equal('Rover',animal.name)
 	end
 
 	def test_dog_sound
-		animal=Dog.new('Rover')
+		animal=Dog.new('Rover','Woof')
 		assert_equal('Woof',animal.sound)
 	end
 
@@ -41,7 +41,7 @@ class TestAnimalFunctions < Minitest::Test
 	end
 
 	def test_what_does_the_dog_say
-		animal=Dog.new('Rover')
+		animal=Dog.new('Rover','Woof')
 			assert_equal('Rover says Woof',animal.get_sound)		
 	end
 
@@ -49,4 +49,9 @@ class TestAnimalFunctions < Minitest::Test
 			animal=Fox.new('Slick')
 			assert_equal('Slick says ???',animal.get_sound)
 	end
+
+	def test_
+		
+	end
+
 end
