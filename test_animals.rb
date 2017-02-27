@@ -2,6 +2,7 @@ require 'minitest/autorun'
 require_relative 'cat.rb'
 require_relative 'dog.rb'
 require_relative 'fox.rb'
+require_relative 'animal_game.rb'
 
 class TestAnimalFunctions < Minitest::Test
 
@@ -41,17 +42,13 @@ class TestAnimalFunctions < Minitest::Test
 	end
 
 	def test_what_does_the_dog_say
-		animal=Dog.new('Rover','Woof')
+			animal=Dog.new('Rover','Woof')
 			assert_equal('Rover says Woof',animal.get_sound)		
 	end
 
 	def test_what_does_the_fox_say
 			animal=Fox.new('Slick')
 			assert_equal('Slick says ???',animal.get_sound)
-	end
-
-	def test_
-		
 	end
 
 end
